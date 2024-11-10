@@ -38,6 +38,12 @@ set showcmd
 " 水平切割窗口时，默认在右边显示新窗口
 set splitright
 
+" 设置两个窗口同步滚动
+set scrollbind
+
+" 快捷键设置：同步开启/关闭scrollbind
+nnoremap <Leader>sb :set scrollbind!<CR>
+
 
 "----------------------------------------------------------------------
 " 颜色主题：色彩文件位于 colors 目录中
@@ -51,6 +57,15 @@ set t_Co=256
 
 " 设置颜色主题，会在所有 runtimepaths 的 colors 目录寻找同名配置
 color desert256
+
+
+" 高亮光标所在的行
+set cursorline
+highlight CursorLine ctermbg=darkgrey guibg=lightgrey
+
+" 高亮光标所在的列
+set cursorcolumn
+highlight CursorColumn ctermbg=darkgrey guibg=lightgrey
 
 
 "----------------------------------------------------------------------
