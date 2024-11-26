@@ -19,17 +19,16 @@
 # 安装
 
 将项目克隆到你喜欢的目录内，比如 `~/.vim` 内：
+原作者链接：https://github.com/skywind3000/vim-init.git
 
 ```bash
-cd ~/.vim
-git clone https://github.com/skywind3000/vim-init.git
+cd /opt
+git clone https://github.com/aiifan/vim-init.git
+cd vim-init
+# 脚本会在所有用户家目录创建$HOME/.vim/vimrc，仅在openEuler 22.03 LTS SP1测试，在openEuler 22.03 LTS SP1系统添加/etc/vimrc实测不可用
+bash install.sh
 ```
 
-然后创建你的 `~/.vimrc` 文件，里面只有一句话：
-
-```VimL
-source ~/.vim/vim-init/init.vim
-```
 
 请调整你的终端软件，确保对 ALT 键的支持，以及 Backspace 键发送正确扫描码：
 
